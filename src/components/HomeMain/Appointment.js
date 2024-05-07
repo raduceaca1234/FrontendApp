@@ -1,8 +1,15 @@
+import { useState } from 'react';
 import BGImg3 from "../../assets/img/bg/ap-bg.png";
 import React from "react";
 import Img from "../../assets/img/bg/open-box-img.png";
+import TimePicker from 'rc-time-picker';
+import 'rc-time-picker/assets/index.css';
+import moment from 'moment';
+
 
 const Appointment = () => {
+  const [value, onChange] = useState('10:00');
+
   return (
     <>
       <section
@@ -59,12 +66,23 @@ const Appointment = () => {
                     </div>
                     <div className="col-lg-6">
                       <div className="contact-field p-relative c-subject mb-20">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          placeholder="Phone"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <div className="contact-field p-relative c-subject mb-20">
                         <select
                           className="custom-select"
                           id="inputGroupSelect04"
                           aria-label="Example select with button addon"
                         >
-                          <option> Department...</option>
+                          <option>Select your service</option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
@@ -82,6 +100,12 @@ const Appointment = () => {
                         />
                       </div>
                     </div>
+                    <div className="col-lg-6">
+                      <div className="contact-field p-relative c-subject mb-20">
+                      <TimePicker defaultValue={moment()} showSecond={false}/>
+                      </div>
+                    </div>
+                    
                     <div className="col-lg-12">
                       <div className="contact-field p-relative c-message mb-30">
                         <textarea

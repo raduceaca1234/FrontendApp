@@ -25,7 +25,6 @@ const Main = () => {
         <Pricing />
         <Gallery />
         <Testimonial />
-        <Blog />
       </main>
     </>
   );

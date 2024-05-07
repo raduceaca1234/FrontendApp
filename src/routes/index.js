@@ -3,8 +3,6 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar/Main'
 import Footer from '../components/Footer/Main'
 import Home from '../components/Home/Main'
-import HomeTwo from '../components/HomeTwo/Main'
-import HomeThree from '../components/HomeThree/Main'
 import AboutUs from '../components/AboutUs/Main'
 import Service from '../components/Service/Main'
 import ServiceDetails from '../components/Service/ServiceDetails/Main'
@@ -43,8 +41,8 @@ const Routing = () => {
       {homepage && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home-two" element={<HomeTwo />} />
-        <Route path="/home-three" element={<HomeThree />} />
+        {/* <Route path="/home-two" element={<HomeTwo />} />
+        <Route path="/home-three" element={<HomeThree />} /> */}
         <Route path="/about" element={<AboutUs />} />
         <Route path="/service" element={<Service />} />
         <Route path="/service-details" element={<ServiceDetails />} />
@@ -55,8 +53,8 @@ const Routing = () => {
         <Route path="/team-details" element={<TeamDetails />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop-details" element={<ShopDetails />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog-details" element={<BlogDetails />} />
+        {/* <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-details" element={<BlogDetails />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
