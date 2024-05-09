@@ -19,11 +19,12 @@ const About = () => {
                 data-animation="fadeInLeft"
                 data-delay=".4s"
               >
-                <img src={Img} alt="img" />
-                <div className="about-text second-about">
+                <div div className="about-text second-about">
                   <span>15</span>
                   <p>Years of Experience</p>
                 </div>
+                <img src={Img} alt="img" />
+                
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
