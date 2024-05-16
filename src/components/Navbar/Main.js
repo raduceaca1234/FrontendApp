@@ -29,17 +29,6 @@ const Main = () => {
                       <ul>
                         <li className="has-sub">
                           <Link to="/">Home</Link>
-                          <ul>
-                            <li>
-                              <Link to="/">Home Page 01</Link>
-                            </li>
-                            <li>
-                              <Link to="/home-two">Home Page 02</Link>
-                            </li>
-                            <li>
-                              <Link to="/home-three">Home Page 03</Link>
-                            </li>
-                          </ul>
                         </li>
                         <li>
                           <Link to="/about">About Us</Link>
@@ -97,17 +86,6 @@ const Main = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className="has-sub">
-                          <Link to="/blog">Blog</Link>
-                          <ul>
-                            <li>
-                              <Link to="/blog">Blog</Link>
-                            </li>
-                            <li>
-                              <Link to="/blog-details">Blog Details</Link>
-                            </li>
-                          </ul>
-                        </li>
                         <li>
                           <Link to="/contact">Contact</Link>
                         </li>
@@ -162,17 +140,6 @@ const Main = () => {
                           <ul style={{ display: mobile ? "block" : "none" }}>
                             <li className="has-sub">
                               <Link to="/">Home</Link>
-                              <ul style={{ display: show ? "block" : "none" }}>
-                                <li>
-                                  <Link to="/">Home Page 01</Link>
-                                </li>
-                                <li>
-                                  <Link to="/home-two">Home Page 02</Link>
-                                </li>
-                                <li>
-                                  <Link to="/home-three">Home Page 03</Link>
-                                </li>
-                              </ul>
                               <Link
                                 to="#"
                                 className={`mean-expand ${
@@ -268,29 +235,6 @@ const Main = () => {
                                 }`}
                                 onClick={() =>
                                   setshow2(show2 === true ? false : true)
-                                }
-                                style={{ fontSize: "18px" }}
-                              >
-                                +
-                              </Link>
-                            </li>
-                            <li className="has-sub">
-                              <Link to="/blog">Blog</Link>
-                              <ul style={{ display: show3 ? "block" : "none" }}>
-                                <li>
-                                  <Link to="/blog">Blog</Link>
-                                </li>
-                                <li>
-                                  <Link to="/blog-details">Blog Details</Link>
-                                </li>
-                              </ul>
-                              <Link
-                                to="#"
-                                className={`mean-expand ${
-                                  show3 && "mean-clicked"
-                                }`}
-                                onClick={() =>
-                                  setshow3(show3 === true ? false : true)
                                 }
                                 style={{ fontSize: "18px" }}
                               >

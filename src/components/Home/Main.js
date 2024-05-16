@@ -17,7 +17,6 @@ const Main = () => {
     <>
       <main>
         <Welness/>
-        <Feature />
         <About />
         <Service />
         <Appointment />

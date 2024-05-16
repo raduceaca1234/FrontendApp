@@ -12,7 +12,7 @@ import Img7 from "../../assets/img/gallery/protfolio-img07.png";
 import Img8 from "../../assets/img/gallery/protfolio-img08.png";
 
 const Gallery = () => {
-  const [toggler, setToggler] = useState(false);
+  const [toggler, setToggler] = useState(true);
   const [activeImage, setActiveImage] = useState();
   const [images, setImages] = useState([
     Img1,

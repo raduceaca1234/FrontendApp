@@ -59,7 +59,7 @@ const Appointment = () => {
                           type="text"
                           id="email"
                           name="email"
-                          placeholder="Eamil"
+                          placeholder="Email"
                           required
                         />
                       </div>
