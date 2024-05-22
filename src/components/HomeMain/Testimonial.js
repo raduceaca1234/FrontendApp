@@ -14,7 +14,7 @@ const Testimonial = () => {
       id: 2,
       img: "assets/img/testimonial/testi_avatar_02.png",
       icon: "assets/img/testimonial/qt-icon.png",
-      name: "Braitly Dcosta",
+      name: "Braitly Dcostaaaa",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      img: "assets/img/testimonial/testi_avatar_02.png",
+      img: "assets/img/testimonial/testi_avatar.png",
       icon: "assets/img/testimonial/qt-icon.png",
       name: "Braitly Dcosta",
     },

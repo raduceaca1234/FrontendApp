@@ -9,6 +9,21 @@ import moment from 'moment';
 
 const Appointment = () => {
   const [value, onChange] = useState('10:00');
+  const [email, setEmail] = useState('');
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const url = 'insert-mailchimp-action-url-here';
+    console.log(email)
+    fetch(`${url}&EMAIL=${email}`, { param: 'c' }, (_, data) => {
+      console.log('data', data);
+      console.log("aaaa")
+      const { msg } = data;
+ 
+      alert(msg);
+    });
+  };
+
 
   return (
     <>
@@ -36,8 +51,7 @@ const Appointment = () => {
                   </p>
                 </div>
                 <form
-                  action="mail.php"
-                  method="post"
+                  onSubmit={onSubmit}
                   className="contact-form mt-30"
                 >
                   <div className="row">
@@ -61,6 +75,7 @@ const Appointment = () => {
                           name="email"
                           placeholder="Email"
                           required
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
@@ -121,6 +136,7 @@ const Appointment = () => {
                           className="btn ss-btn"
                           data-animation="fadeInRight"
                           data-delay=".8s"
+                          type="submit"
                         >
                           <span>Submit Now</span>
                         </button>
