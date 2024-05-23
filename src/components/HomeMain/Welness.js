@@ -13,21 +13,17 @@ function Welness() {
                                 <div className="col-lg-6 col-md-6">
                                     <div className="slider-content s-slider-content mt-20">
                                         <h5 data-animation="fadeInUp" data-delay=".4s">
-                                            Spa & Welness Salon{" "}
+                                            Flavia Rusu Nail Technician{" "}
                                         </h5>
                                         <h2 data-animation="fadeInUp" data-delay=".4s">
-                                            Make Your Skin
-                                            <br />
-                                            Shine & Glowing
+                                            Let your nails do the talking
                                         </h2>
                                         <p data-animation="fadeInUp" data-delay=".6s">
-                                            Donec vitae libero non enim placerat eleifend aliquam
-                                            erat volutpat. Curabitur diam ex, dapibus purus sapien,
-                                            cursus sed nisl tristique.
+                                        Providing high-quality manicures and pedicures, which includes removing old nail polish from fingernails and toenails, cleaning nails, shaping the ends of nails, pushing back cuticles, and applying new polish based on clients' preferences. Applying artificial nails.
                                         </p>
 
                                         <div className="slider-btn mt-30">
-                                            <Link to="/contact" className="btn ss-btn mr-15">
+                                            <Link to="/about" className="btn ss-btn mr-15">
                                                 Discover More
                                             </Link>
                                             <Link to="/contact" className="btn ss-btn active">

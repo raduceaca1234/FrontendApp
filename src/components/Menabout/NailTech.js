@@ -8,49 +8,49 @@ function Doctor() {
         {
           id: 1,
           img: "assets/img/team/team01.png",
-          name: "Howard Holmes",
+          name: "Flavia Rusu",
         },
-        {
-          id: 2,
-          img: "assets/img/team/team02.png",
-          name: "Ella Thompson",
-        },
-        {
-          id: 3,
-          img: "assets/img/team/team03.png",
-          name: "Vincent Cooper",
-        },
-        {
-          id: 4,
-          img: "assets/img/team/team01.png",
-          name: "Howard Holmes",
-        },
-        {
-          id: 5,
-          img: "assets/img/team/team02.png",
-          name: "Danielle Bryant",
-        },
-        {
-          id: 6,
-          img: "assets/img/team/team03.png",
-          name: "Vincent Cooper",
-        },
-        {
-          id: 7,
-          img: "assets/img/team/team01.png",
-          name: "Howard Holmes",
-        },
-        {
-          id: 8,
-          img: "assets/img/team/team02.png",
-          name: "Howard Holmes",
-        },
+        // {
+        //   id: 2,
+        //   img: "assets/img/team/team02.png",
+        //   name: "Ella Thompson",
+        // },
+        // {
+        //   id: 3,
+        //   img: "assets/img/team/team03.png",
+        //   name: "Vincent Cooper",
+        // },
+        // {
+        //   id: 4,
+        //   img: "assets/img/team/team01.png",
+        //   name: "Howard Holmes",
+        // },
+        // {
+        //   id: 5,
+        //   img: "assets/img/team/team02.png",
+        //   name: "Danielle Bryant",
+        // },
+        // {
+        //   id: 6,
+        //   img: "assets/img/team/team03.png",
+        //   name: "Vincent Cooper",
+        // },
+        // {
+        //   id: 7,
+        //   img: "assets/img/team/team01.png",
+        //   name: "Howard Holmes",
+        // },
+        // {
+        //   id: 8,
+        //   img: "assets/img/team/team02.png",
+        //   name: "Howard Holmes",
+        // },
       ];
       const doctor = {
         initialIndex: 4,
         dots: true,
         arrows: false,
-        infinite: true,
+        infinite: false,
         speed: 900,
         autoPlay: true,
         slidesToShow: 4,
@@ -81,6 +81,10 @@ function Doctor() {
         ],
       };
 
+      function openTab() {
+        window.open('https://www.instagram.com/flavia_rusu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==');
+      }
+
     return (
         <>
             <section className="team-area2 fix p-relative pt-105 pb-80">
@@ -88,8 +92,8 @@ function Doctor() {
                     <div className="row">
                         <div className="col-lg-12 p-relative">
                             <div className="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
-                                <h5>Our Doctor</h5>
-                                <h2>Best Expert Dentist</h2>
+                                <h5>Our Nail Expert</h5>
+                                <h2>Best Expert Technician</h2>
                             </div>
                         </div>
                     </div>
@@ -106,22 +110,17 @@ function Doctor() {
                                         <h4>
                                             <Link to="/team-details">{item.name}</Link>
                                         </h4>
-                                        <p>Dentist</p>
+                                        <p>Nail Technician</p>
                                         <div className="team-social">
                                             <ul>
                                                 <li>
-                                                    <Link to="#">
+                                                    <Link to="#" onClick={openTab}>
                                                         <i className="fab fa-facebook-f"></i>
                                                     </Link>
                                                 </li>
+                              
                                                 <li>
-                                                    {" "}
-                                                    <Link to="#">
-                                                        <i className="fab fa-twitter"></i>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to="#">
+                                                    <Link to="#" onClick={openTab}>
                                                         <i className="fab fa-instagram"></i>
                                                     </Link>
                                                 </li>

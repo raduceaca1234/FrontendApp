@@ -21,7 +21,7 @@ const Main = () => {
         <Service />
         <Appointment />
         <Product />
-        <Pricing />
+        {/* <Pricing /> */}
         <Gallery />
         <Testimonial />
       </main>

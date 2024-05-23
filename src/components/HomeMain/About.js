@@ -35,27 +35,14 @@ const About = () => {
               >
                 <div className="about-title second-title pb-25">
                   <h5>About Us</h5>
-                  <h2>Best Way To Care Your Skin</h2>
+                  <h2>I do nails. What's your superpower?</h2>
                 </div>
                 <p>
-                  Suspendisse et porttitor leo. Sed porttitor dui sit amet
-                  luctus bibendum. Sed pulvinar diam lacus, ut elementum nisl
-                  volutpat in. Nullam vitae nulla dolor. Pellentesque viverra
-                  arcu ut Curabitur tempor mauris ex, eget porta tellus posuere
-                  maximus.
+                Bine te-am găsit! Numele meu este Flavia și ma bucur ca ai ales sa ne cunoaștem! Drumul meu in industria manichiurii a început in anul 2022, din pura curiozitate transformată in pasiune!
                 </p>
                 <p>
-                  Nulla nisl ligula, efficitur eget ipsum ac, luctus elementum
-                  risus. Phasellus venenatis turpis eget nulla porttitor varius.
-                  Ut ut lorem commodo, aliquet augue sit amet, luctus elit.
-                  Curabitur tempor mauris ex, eget porta metus imperdiet ac.
-                  Mauris aliquet ante sit amet rhoncus semper.
+                Am investit și investesc constant in mine și in cariera mea pentru a-ti putea oferi servicii la cea mai înaltă calitate. Iubesc ceea ce fac și iubesc sa aduc bucuria unei manichiuri impecabile fiecareia dintre voi!
                 </p>
-                <div className="slider-btn mt-20">
-                  <Link to="/about" className="btn ss-btn smoth-scroll">
-                    Explore More
-                  </Link>
-                </div>
               </div>
             </div>
           </div>

@@ -8,43 +8,43 @@ function First() {
         {
           id: 1,
           img: "assets/img/team/team01.png",
-          name: "Bableo Dablo",
+          name: "Flavia Rusu",
         },
-        {
-          id: 2,
-          img: "assets/img/team/team02.png",
-          name: "Dawon Crisen",
-        },
-        {
-          id: 3,
-          img: "assets/img/team/team03.png",
-          name: "David Suarez",
-        },
-        {
-          id: 4,
-          img: "assets/img/team/team04.png",
-          name: "Gerard Peano",
-        },
-        {
-          id: 5,
-          img: "assets/img/team/team05.png",
-          name: "Ostin Green",
-        },
-        {
-          id: 6,
-          img: "assets/img/team/team06.png",
-          name: "Norman Colins",
-        },
-        {
-          id: 7,
-          img: "assets/img/team/team07.png",
-          name: "Ostin Green",
-        },
-        {
-          id: 8,
-          img: "assets/img/team/team08.png",
-          name: "Norman Colins",
-        },
+        // {
+        //   id: 2,
+        //   img: "assets/img/team/team02.png",
+        //   name: "Dawon Crisen",
+        // },
+        // {
+        //   id: 3,
+        //   img: "assets/img/team/team03.png",
+        //   name: "David Suarez",
+        // },
+        // {
+        //   id: 4,
+        //   img: "assets/img/team/team04.png",
+        //   name: "Gerard Peano",
+        // },
+        // {
+        //   id: 5,
+        //   img: "assets/img/team/team05.png",
+        //   name: "Ostin Green",
+        // },
+        // {
+        //   id: 6,
+        //   img: "assets/img/team/team06.png",
+        //   name: "Norman Colins",
+        // },
+        // {
+        //   id: 7,
+        //   img: "assets/img/team/team07.png",
+        //   name: "Ostin Green",
+        // },
+        // {
+        //   id: 8,
+        //   img: "assets/img/team/team08.png",
+        //   name: "Norman Colins",
+        // },
       ];
     return (
         <>
@@ -79,11 +79,7 @@ function First() {
                                                         <i className="fab fa-instagram"></i>
                                                     </a>
                                                 </li>
-                                                <li>
-                                                    <a href="https://twitter.com" title="Twitter">
-                                                        <i className="fab fa-twitter"></i>
-                                                    </a>
-                                                </li>
+                                                
                                             </ul>
                                         </div>
                                     </div>

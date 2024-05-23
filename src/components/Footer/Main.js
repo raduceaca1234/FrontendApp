@@ -33,9 +33,7 @@ const Main = () => {
                               <img src={Img2} alt="logo" />
                             </div>
                             <div className="text">
-                              <strong>Monday - Saturday:</strong>
-                              <p>9:00am - 10:00pm</p>
-                              <strong>Monday - Saturday:</strong>
+                              <strong>Monday - Friday:</strong>
                               <p>9:00am - 10:00pm</p>
                             </div>
                           </div>
@@ -61,20 +59,11 @@ const Main = () => {
                       <li>
                         <Link to="/service">Services</Link>
                       </li>
-                      <li>
-                        <Link to="/gallery"> Project</Link>
-                      </li>
-                      <li>
-                        <Link to="/team">Our Team</Link>
-                      </li>
-                      <li>
-                        <Link to="/blog">Latest Blog</Link>
-                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2 col-sm-6">
+              {/* <div className="col-xl-2 col-lg-2 col-sm-6">
                 <div className="footer-widget mb-30">
                   <div className="f-widget-title">
                     <h2>Our Services</h2>
@@ -102,47 +91,14 @@ const Main = () => {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xl-3 col-lg-3 col-sm-6">
-                <div className="footer-widget mb-30">
-                  <div className="f-widget-title">
-                    <h2>Subscribe Now !</h2>
-                  </div>
-                  <div className="footer-link">
-                    <div
-                      className="subricbe p-relative"
-                      data-animation="fadeInDown"
-                      data-delay=".4s"
-                    >
-                      <form
-                        action="news-mail.php"
-                        method="post"
-                        className="contact-form "
-                      >
-                        <input
-                          type="text"
-                          id="email2"
-                          name="email2"
-                          className="header-input"
-                          placeholder="Your Email..."
-                          required
-                        />
-                        <button className="btn header-btn">
-                          <i className="fas fa-location-arrow"></i>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
                 <div className="footer-social mt-10">
                   <a href="https://www.facebook.com/" title="Facebook">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.instagram.com/" title="Instagram">
+                  <a href="https://www.instagram.com/flavia_rusu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" title="Instagram">
                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="https://twitter.com" title="Twitter">
-                    <i className="fab fa-twitter"></i>
                   </a>
                 </div>
               </div>
@@ -150,7 +106,7 @@ const Main = () => {
             <div className="row align-items-center copyright-wrap">
               <div className="col-lg-6">
                 <div className="copy-text">
-                  Copyright &copy; 2022 <Link to="#">Fallspa</Link>. All rights
+                  Copyright &copy; 2024 <Link to="#">Fallspa</Link>. All rights
                   reserved.
                 </div>
               </div>
@@ -163,8 +119,8 @@ const Main = () => {
                           <img src={Footer} alt="img" />
                         </div>
                         <div className="text">
-                          <span>info@wellspa.com</span>
-                          <h3> Our Email:</h3>
+                        <h3> Our Email:</h3>
+                          <span>flavia.rusu@gmail.com</span>
                         </div>
                       </div>
                     </li>
@@ -174,8 +130,8 @@ const Main = () => {
                           <img src={Footer1} alt="img" />
                         </div>
                         <div className="text">
-                          <span>+91 598 9874 987</span>
                           <h3>Call Now:</h3>
+                          <span>+40721211210</span>
                         </div>
                       </div>
                     </li>

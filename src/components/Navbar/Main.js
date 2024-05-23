@@ -33,31 +33,8 @@ const Main = () => {
                         <li>
                           <Link to="/about">About Us</Link>
                         </li>
-                        <li className="has-sub">
+                        <li>
                           <Link to="/service">Services</Link>
-                          <ul>
-                            <li>
-                              <Link to="/service-details"> Facials</Link>
-                            </li>
-                            <li>
-                              <Link to="/service-details">Body Treatments</Link>
-                            </li>
-                            <li>
-                              <Link to="/service-details"> Mineral Baths</Link>
-                            </li>
-                            <li>
-                              <Link to="/service-details">Waxing</Link>
-                            </li>
-                            <li>
-                              <Link to="/service-details">Massage</Link>
-                            </li>
-                            <li>
-                              <Link to="/service-details">Geothermal Spa</Link>
-                            </li>
-                            <li>
-                              <Link to="/service">Services</Link>
-                            </li>
-                          </ul>
                         </li>
                         <li className="has-sub">
                           <Link to="#">Pages</Link>
@@ -65,24 +42,8 @@ const Main = () => {
                             <li>
                               <Link to="/gallery">Gallery</Link>
                             </li>
-
-                            <li>
-                              <Link to="/pricing">Pricing</Link>
-                            </li>
-                            <li>
-                              <Link to="/faq">Faq</Link>
-                            </li>
                             <li>
                               <Link to="/team">Team</Link>
-                            </li>
-                            <li>
-                              <Link to="/team-details">Team Details</Link>
-                            </li>
-                            <li>
-                              <Link to="/shop">Shop</Link>
-                            </li>
-                            <li>
-                              <Link to="/shop-details">Shop Details</Link>
                             </li>
                           </ul>
                         </li>
@@ -140,67 +101,13 @@ const Main = () => {
                           <ul style={{ display: mobile ? "block" : "none" }}>
                             <li className="has-sub">
                               <Link to="/">Home</Link>
-                              <Link
-                                to="#"
-                                className={`mean-expand ${
-                                  show && "mean-clicked"
-                                }`}
-                                onClick={() =>
-                                  setshow(show === true ? false : true)
-                                }
-                                style={{ fontSize: "18px" }}
-                              >
-                                +
-                              </Link>
                             </li>
                             <li>
                               <Link to="/about/">About Us</Link>
                             </li>
 
-                            <li className="has-sub">
+                            <li>
                               <Link to="/service">Services</Link>
-                              <ul style={{ display: show1 ? "block" : "none" }}>
-                                <li>
-                                  <Link to="/service-details"> Facials</Link>
-                                </li>
-                                <li>
-                                  <Link to="/service-details">
-                                    Body Treatments
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link to="/service-details">
-                                    {" "}
-                                    Mineral Baths
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link to="/service-details">Waxing</Link>
-                                </li>
-                                <li>
-                                  <Link to="/service-details">Massage</Link>
-                                </li>
-                                <li>
-                                  <Link to="/service-details">
-                                    Geothermal Spa
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link to="/service">Services</Link>
-                                </li>
-                              </ul>
-                              <Link
-                                to="#"
-                                className={`mean-expand ${
-                                  show1 && "mean-clicked"
-                                }`}
-                                onClick={() =>
-                                  setshow1(show1 === true ? false : true)
-                                }
-                                style={{ fontSize: "18px" }}
-                              >
-                                +
-                              </Link>
                             </li>
                             <li className="has-sub">
                               <Link to="#">Pages</Link>
@@ -209,23 +116,9 @@ const Main = () => {
                                   <Link to="/gallery">Gallery</Link>
                                 </li>
 
-                                <li>
-                                  <Link to="/pricing">Pricing</Link>
-                                </li>
-                                <li>
-                                  <Link to="/faq">Faq</Link>
-                                </li>
+                                
                                 <li>
                                   <Link to="/team">Team</Link>
-                                </li>
-                                <li>
-                                  <Link to="/team-details">Team Details</Link>
-                                </li>
-                                <li>
-                                  <Link to="/shop">Shop</Link>
-                                </li>
-                                <li>
-                                  <Link to="/shop-details">Shop Details</Link>
                                 </li>
                               </ul>
                               <Link

@@ -45,9 +45,7 @@ const Appointment = () => {
                   <h5>Get In Touch</h5>
                   <h2>Get Appointment</h2>
                   <p>
-                    Aenean ut enim vel lectus rutrum sodales. Aliquam consequat
-                    augue eget enim convallis, at maximus libero ullamcorper.
-                    Cras sit amet placerat nisi.
+                    
                   </p>
                 </div>
                 <form
@@ -98,9 +96,13 @@ const Appointment = () => {
                           aria-label="Example select with button addon"
                         >
                           <option>Select your service</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                          <option value="1">Manichiura Semipermanenta</option>
+                          <option value="2">Slim</option>
+                          <option value="3">Constructie Gel 1-4</option>
+                          <option value="4">Constructie Gel 5+</option>
+                          <option value="5">Intretinere Gel 1-4</option>
+                          <option value="6">Constructie Gel 5+</option>
+                          <option value="7">Demontare</option>
                         </select>
                         <i className="fa fa-angle-down"></i>
                       </div>
@@ -155,17 +157,6 @@ const Appointment = () => {
                 <div className="text">
                   <div className="left-text">Monday to Friday:</div>
                   <div className="right-text">09:00 am – 10:00 pm</div>
-                </div>
-                <div className="text">
-                  <div className="left-text">Saturday:</div>
-                  <div className="right-text">09:00 am – 08:00 pm</div>
-                </div>
-                <div className="text">
-                  <div className="left-text">Sunday:</div>
-                  <div className="right-text">09:00 am – 05:00 pm</div>
-                </div>
-                <div className="discount">
-                  Check out seasonal discounts for best offers.
                 </div>
               </div>
             </div>
