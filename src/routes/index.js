@@ -12,6 +12,9 @@ import Faq from '../components/Pages/Faq/Main'
 import Team from '../components/Pages/Team/Main'
 import TeamDetails from '../components/Pages/TeamDetails/Main'
 import Contact from '../components/Contact/Main'
+import Login from '../components/Register/Login'
+import Comment from '../components/HomeMain/Comment'
+
 
 
 const Routing = () => {
@@ -41,6 +44,8 @@ const Routing = () => {
         <Route path="/home-three" element={<HomeThree />} /> */}
         <Route path="/about" element={<AboutUs />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/comment" element={<Comment/>} />
         <Route path="/service-details" element={<ServiceDetails />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/pricing" element={<Pricing />} />

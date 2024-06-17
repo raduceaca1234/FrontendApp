@@ -20,10 +20,9 @@ const Main = () => {
         <About />
         <Service />
         <Appointment />
-        <Product />
         {/* <Pricing /> */}
         <Gallery />
-        <Testimonial />
+        {/* <Testimonial /> */}
       </main>
     </>
   );

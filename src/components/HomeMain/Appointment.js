@@ -5,23 +5,48 @@ import Img from "../../assets/img/bg/open-box-img.png";
 import TimePicker from 'rc-time-picker';
 import 'rc-time-picker/assets/index.css';
 import moment from 'moment';
+import { useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 
 const Appointment = () => {
   const [value, onChange] = useState('10:00');
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [date, setDate] = useState('');
+  const [hour, setHour] = useState(moment());
+  const [message, setMessage] = useState('');
+  const [service, setService] = useState('');
 
-  const onSubmit = (e) => {
+
+  useEffect(() => emailjs.init("go66-G00nx9GSt94v"), []);
+  // const emailRef = useRef<HTMLInputElement>(any);
+  // const nameRef = useRef<HTMLInputElement>(any);
+  const [loading, setLoading] = useState(false);
+
+
+  const onSubmit = async  (e) => {
     e.preventDefault();
-    const url = 'insert-mailchimp-action-url-here';
-    console.log(email)
-    fetch(`${url}&EMAIL=${email}`, { param: 'c' }, (_, data) => {
-      console.log('data', data);
-      console.log("aaaa")
-      const { msg } = data;
- 
-      alert(msg);
-    });
+    const serviceId = "service_plwdewc";
+    const templateId = "template_l9dq8yb";
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, {
+       name: name,
+        recipient: email,
+        phone_number: phoneNumber,
+        service: service,
+        day: date,
+        // hour: hour,
+        message: message
+      });
+      alert("email successfully sent check inbox");
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
 
@@ -61,6 +86,7 @@ const Appointment = () => {
                           name="firstn"
                           placeholder="First Name"
                           required
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                     </div>
@@ -85,6 +111,7 @@ const Appointment = () => {
                           name="phone"
                           placeholder="Phone"
                           required
+                          onChange={(e) => setPhoneNumber(e.target.value)}
                         />
                       </div>
                     </div>
@@ -94,15 +121,17 @@ const Appointment = () => {
                           className="custom-select"
                           id="inputGroupSelect04"
                           aria-label="Example select with button addon"
+                          onChange={(e) => setService(e.target.value)}
+
                         >
                           <option>Select your service</option>
-                          <option value="1">Manichiura Semipermanenta</option>
-                          <option value="2">Slim</option>
-                          <option value="3">Constructie Gel 1-4</option>
-                          <option value="4">Constructie Gel 5+</option>
-                          <option value="5">Intretinere Gel 1-4</option>
-                          <option value="6">Constructie Gel 5+</option>
-                          <option value="7">Demontare</option>
+                          <option value="Manichiura Semipermanenta">Manichiura Semipermanenta</option>
+                          <option value="Slim">Slim</option>
+                          <option value="Constructie Gel 1-4">Constructie Gel 1-4</option>
+                          <option value="Constructie Gel 5+">Constructie Gel 5+</option>
+                          <option value="Intretinere Gel 1-4">Intretinere Gel 1-4</option>
+                          <option value="Intretinere Gel 5+">Intretinere Gel 5+</option>
+                          <option value="Demontare">Demontare</option>
                         </select>
                         <i className="fa fa-angle-down"></i>
                       </div>
@@ -114,12 +143,13 @@ const Appointment = () => {
                           id="subject"
                           name="subject"
                           placeholder="Subject"
+                          onChange={(e) => setDate(e.target.value)}
                         />
                       </div>
                     </div>
                     <div className="col-lg-6">
                       <div className="contact-field p-relative c-subject mb-20">
-                      <TimePicker defaultValue={moment()} showSecond={false}/>
+                      <TimePicker defaultValue={moment()} showSecond={false} onChange={(e) => setHour(e.target.value)}/>
                       </div>
                     </div>
                     
@@ -131,6 +161,7 @@ const Appointment = () => {
                           cols="30"
                           rows="10"
                           placeholder="Write comments"
+                          onChange={(e) => setMessage(e.target.value)}
                         ></textarea>
                       </div>
                       <div className="slider-btn">
